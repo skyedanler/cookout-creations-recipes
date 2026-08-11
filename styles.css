@@ -1,0 +1,97 @@
+:root {
+    --primary-color: rgb(201, 42, 30);
+    --secondary-color: oldlace;
+}
+
+.anybody-font {
+  font-family: "Anybody", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body {
+    margin: 0;
+    background: var(--secondary-color);
+    color: hsl(7,10%,20%);
+    font-family: "Anybody", sans-serif;
+}
+
+/*header*/
+header {
+    text-align: center;
+}
+header h1 {
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 4em;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    background: var(--primary-color);
+    padding: 10px;
+}
+
+
+/*recipe section*/
+#recipes {
+    display: block;
+    margin: 20px auto;
+}
+.recipe-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+article {
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    width: 30%;
+    padding: 10px;
+    margin: 20px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+article img {
+    width: 60%;
+    height: auto;
+
+}
+.ingredients {
+    text-align: center;
+}
+article:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.contact-info a {
+    color: hsl(7,5%,60%);
+}
