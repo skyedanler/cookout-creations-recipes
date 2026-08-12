@@ -1,6 +1,7 @@
 :root {
     --primary-color: rgb(201, 42, 30);
     --secondary-color: oldlace;
+    --dark-font: hsl(7,10%,20%);
 }
 
 .anybody-font {
@@ -15,7 +16,7 @@
 body {
     margin: 0;
     background: var(--secondary-color);
-    color: hsl(7,10%,20%);
+    color: var(--dark-font);
     font-family: "Anybody", sans-serif;
 }
 
@@ -33,13 +34,94 @@ nav ul {
     justify-content: center;
     list-style: none;
     gap: 20px;
-    padding: 0;
+    padding: 10px 0;
+}
+nav li {
+  transition: transform 0.3s ease-in-out;
 }
 nav a {
     text-decoration: none;
     color: var(--secondary-color);
     background: var(--primary-color);
-    padding: 10px;
+    padding: 10px; 
+}
+nav li:hover {
+  transform: scale(1.1);
+}
+nav a:hover {
+  background: var(--dark-font);
+  color: var(--secondary-color);
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+
+/*hero section - recipe book*/
+.hero-section { /*if you get here you're back to where you started*/
+  background-image: url('imgs/barbecue.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--secondary-color);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    'grid-item4 grid-item1'
+    'grid-item4 grid-item2'
+    'grid-item4 grid-item3'
+    'grid-item4 .';
+  height: 400px;
+  padding: 25px;
+  gap: 5px;
+  margin-top: 30px;
+}
+.grid-item1 {
+  grid-area: grid-item1;
+  font-size: 2em;
+  padding: 0 40px;
+  margin: 20px 0 0 0;
+  text-align: right;
+}
+.grid-item2 {
+  grid-area: grid-item2;
+  padding: 0 40px;
+  margin: 0;
+  text-align: right;
+}
+.grid-item3 {
+  grid-area: grid-item3;
+  padding: 5px 20px;
+  background: var(--dark-font);
+  color: var(--secondary-color);
+  font-family: "Anybody", sans serif;
+  font-weight: 600;
+  font-size: 1em;
+  margin: 20px auto 0;
+  border-radius: 3px;
+}
+.grid-item3:hover {
+  cursor: pointer;
+  background: var(--secondary-color);
+  color: var(--dark-font);
+}
+.grid-item4 /*img*/ {
+  grid-area: grid-item4;
+  min-width: 40%;
+  max-width: 50%;
+  border-radius: 5px;
+  transform: rotate(-30deg);
+  border: 10px ridge var(--secondary-color);
+  place-self: center;
+}
+
+
+/*about section*/
+#about {
+  width: 80vw;
+  margin: 4rem auto;
 }
 
 
@@ -93,5 +175,5 @@ footer {
     margin: 0;
 }
 .contact-info a {
-    color: hsl(7,5%,60%);
+    color: var(--dark-font);
 }

@@ -11,7 +11,7 @@
 - [x] External CSS stylesheet properly linked
 - [x] Meta description and title
 - [x] Professional header with navigation menu
-- [ ] Hero section with compelling headline and call-to-action
+- [x] Hero section with compelling headline and call-to-action
 - [x] At least 3 main content sections
 - [x] Footer with contact information
 - [x] CSS Box Model implementation (margin, padding, borders)
@@ -26,15 +26,15 @@
 - [ ] HTML and CSS validation passing (no errors or warnings (info are ok)) (https://validator.w3.org/nu/#textarea)
 
 ### **Could Have (Bonus Points):**
-- [ ] Hover effects on interactive elements
-- [ ] Implement Max Width and center the body on viewport (1440px)
-- [ ] Advanced CSS Grid with named areas
-- [ ] Complex Flexbox patterns and combinations
+- [x] Hover effects on interactive elements
+- [x] Implement Max Width and center the body on viewport (1440px)
+- [x] Advanced CSS Grid with named areas
+- [x] Complex Flexbox patterns and combinations
 - [ ] CSS transitions and animations
-- [ ] Advanced color techniques (HSL, gradients)
+- [x] Advanced color techniques (HSL, gradients)
 - [ ] Creative positioning and overlapping elements
 - [ ] Enhanced accessibility features
-- [ ] CSS custom properties (variables)
+- [x] CSS custom properties (variables)
 - [ ] Advanced typography techniques
 - [ ] Interactive form elements
 
